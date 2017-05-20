@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="apps.firmanmujahidin.com.iakbeginner.MainActivity">
+
+    <ImageView
+        android:id="@+id/mIVimages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/mountain"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/mTVhbd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/hbd_text"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:textColor="@color/putih"
+        android:textSize="@dimen/text_40"/>
+
+    <TextView
+        android:id="@+id/mTVform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/form"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:textColor="@color/putih"/>
+
+    <Button
+        android:id="@+id/mBTclick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickBtn"
+        android:text="@string/click"/>
+
+</RelativeLayout>

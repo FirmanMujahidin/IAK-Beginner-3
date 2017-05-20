@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/activity_horizontal"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal"
+    android:orientation="vertical"
+    tools:context="apps.firmanmujahidin.com.iakbeginner.OrderActivity">
+
+    <EditText
+        android:id="@+id/mTextNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/yout_name"
+        android:textSize="@dimen/text_20"/>
+    <TextView
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_14"
+        android:textAllCaps="true"
+        android:text="Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:layout_marginBottom="8dp"
+        tools:layout_width="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mSpinnerMenu" />
+    <TextView
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_14"
+        android:textAllCaps="true"
+        android:text="Toping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="Susu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:text="Coklat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <TextView
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_14"
+        android:textAllCaps="true"
+        android:text="Quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:textSize="@dimen/text_14"
+            android:text="-"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/mButtonMin"
+            android:onClick="onClickMin" />
+        <TextView
+            android:textSize="@dimen/text_14"
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mTextQty" />
+        <Button
+            android:textSize="@dimen/text_14"
+            android:text="+"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/mButtonPlus"
+            android:onClick="onClickPlus" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginBottom="8dp"
+        android:textSize="@dimen/text_17"
+        android:text="$5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mTextHarga" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:textSize="@dimen/text_14"
+            android:text="Reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickReset" />
+        <Button
+            android:textSize="@dimen/text_14"
+            android:text="Order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mButtonOrder"
+            android:onClick="onClickOrder" />
+    </LinearLayout>
+</LinearLayout>

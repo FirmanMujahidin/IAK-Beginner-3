@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="about" android:id="@+id/about">About</item>
+    <item android:title="order" android:id="@+id/order">Order</item>
+    <item android:title="exit" android:id="@+id/exit">Exit</item>
+</menu>
